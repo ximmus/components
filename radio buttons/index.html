@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Radio Buttons</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts.js" defer></script>
+</head>
+<body>
+	<h1>Radio Buttons</h1>
+	<p>Use form with radio buttons to pull values into script without a server request.</p>
+	<form id="question" name="answers">
+		<input type="radio" name="selection" value="a" onclick="validateSelection()">A<br>
+  		<input type="radio" name="selection" value="b" onclick="validateSelection()">B<br>
+  		<input type="radio" name="selection" value="c" onclick="validateSelection()">C<br>
+  		<input type="radio" name="selection" value="d" onclick="validateSelection()">D<br>
+  		<input type="button" id="submit" onclick="getAnswer()" value="Submit" disabled>
+  		<input type="button" onclick="getAnswers()" value="Answers">
+  	</form>
+</body>
+</html>
