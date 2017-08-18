@@ -1,5 +1,12 @@
 // empty array to hold the answers
 var answers = [];
+// array with correct answers
+var answerkey = [
+	["a"],
+	["b"],
+	["c"],
+	["d"]
+];
 
 function validateSelection() {
 	// get the radio form
@@ -27,8 +34,7 @@ function getAnswer() {
     var i;
     for (i = 0; i < question.length; i++) {
         if (question[i].checked) {
-            // answer = answer + question.name;
-            answer.push(question[i].value);
+            answer.push(question[i].value); // add answers to answer key
             question[i].checked = false; // clear selection on submit
             validateSelection();
         }
@@ -40,7 +46,8 @@ function getAnswer() {
 function getAnswers() {
 	for (i = 0; i < answers.length; i++) {
 		var question = i+1;
-		console.log("Answer for " + question + " was: " + answers[i][0]);
+		console.log("Your answer for " + question + " was: " + answers[i][0]);
+		console.log("The answer for " + question + " is: " + answerkey[i][0]);
 	}
 }
 
@@ -49,4 +56,5 @@ function getAnswers() {
  //////////
 /**
 1. Dynamic content loading
+2. Anwser check
 **/
