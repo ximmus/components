@@ -39,3 +39,10 @@ function getAnswer() {
 function getAnswers() {
 	console.log(answers);
 }
+
+   ///////////
+  // TO DO //
+ //////////
+/**
+1. Dynamic content loading
+**/
