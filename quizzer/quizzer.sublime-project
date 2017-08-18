@@ -3,12 +3,13 @@
 	[
 		{
 			"path": ".",
-			"name": "Barcode Scanner",
+			"name": "Quizzer",
 			"file_exclude_patterns": [
 				"*.sublime-project",
 				"*.sublime-workspace",
 				".gitignore",
-				".gitattributes"
+				".gitattributes",
+				"prepros-6.config"
 			]
 		}
 	]
