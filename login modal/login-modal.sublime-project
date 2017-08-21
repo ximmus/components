@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-project",
+				"*.sublime-workspace",
+				".gitignore",
+				".gitattributes",
+				"prepros-6.config"
+			],
+			"name": "Login Modal",
+			"path": "."
+		}
+	]
+}
