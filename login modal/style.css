@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 html {
   line-height: 1.15;
   /* 1 */
@@ -392,6 +393,24 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #212121; }
+
+.button {
+  background-color: #2196F3;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; }
+  .button .disabled {
+    opacity: 0.6;
+    cursor: not-allowed; }
+  .button .full-width {
+    width: 100%; }
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -408,17 +427,17 @@ template {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #999999;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */ }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #FFFFFF;
   padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
+  border: 1px solid #BDBDBD;
+  width: auto;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -426,19 +445,6 @@ template {
   top: 50%;
   left: 50%;
   overflow: auto; }
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
 
 #email-error {
   display: none; }
