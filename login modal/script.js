@@ -27,7 +27,7 @@ var credintials = {
 };
 
 // Get submit button
-var submit = document.login.submit;
+var submit = document.getElementById('userSubmit');
 
 // get email and password
 var email = document.login.email.value;

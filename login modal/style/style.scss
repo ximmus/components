@@ -1,9 +1,10 @@
-// Base, variables and mixins
-@import "base/normalize";
-@import "base/color";
-@import "base/typography";
-@import "base/forms";
+// Reset, functions, variables and mixins
+@import "base/functions";
+@import "base/variables";
+@import "base/mixins";
+@import "base/reboot";
 @import "base/buttons";
+@import "base/forms";
 
 // Layout
 

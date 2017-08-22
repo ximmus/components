@@ -17,18 +17,27 @@
 
 	  			<!-- Modal content -->
 	  			<div class="modal-content">
-	    			<form id="userLogin" name="login">
-	    				<label for="userEmail">Employee Email</label><br>
-	    				<input id="userEmail" name="email" type="email" onchange="validateEmail()"><span id="email-error">Please enter a valid email address.</span><br>
-	    				<label for="userPassword">Password</label><br>
-	    				<input id="userPassword" name="password" type="password"><br>
-	    				<input id="userRemeber" type="checkbox" name="remember">Remeber me?<br>
-	    				<input id="userSubmit" class="button disabled full-width" name="submit" type="button" onclick="validateCredintials()" value="Log in" disabled>
+	    			<form id="userLogin" name="login" novalidate>
+	    				<div>
+							<label for="userEmail">Employee Email</label>
+	    					<input id="userEmail" class="form-control" name="email" type="email" onchange="validateEmail()">
+	    					<div id="email-error" class="invalid-feedback">Please enter a valid email address.</div>	    					
+	    				</div>
+						<div>
+	    					<label for="userPassword">Password</label>
+	    					<input id="userPassword" class="form-control" name="password" type="password">
+	    				</div>
+	    				<div class="checkbox">
+	    					<label>
+	    						<input id="userRemeber" type="checkbox" name="remember"> Remeber me?
+	    					</label>
+	    				</div>    				
+	    				<p id="login-error">
+							Something went wrong, please try again.<br>
+	    					<a href="">Trouble logging in?</a>
+	    				</p>
 	    			</form>
-	    			<p id="login-error">
-						Something went wrong, please try again.<br>
-	    				<a href="">Trouble logging in?</a>
-	    			</p>
+	    			<input id="userSubmit" class="btn btn-primary btn-lg btn-block" name="submit" type="button" onclick="validateCredintials()" value="Log in" disabled>
 	  			</div>
 	</main>
 </body>
