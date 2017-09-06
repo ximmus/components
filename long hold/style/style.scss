@@ -3,3 +3,7 @@ $main-color: #cccccc;
 body{
 	background-color: $main-color;
 }
+
+.hidden {
+	visibility: hidden;
+}
